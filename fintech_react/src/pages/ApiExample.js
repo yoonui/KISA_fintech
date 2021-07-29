@@ -24,7 +24,7 @@ const ApiExample = () => {
         <div>
             <input onChange={handleSearchInput}></input>
             <button onClick={getData}>약국 조회하기</button>
-    </div>
+        </div>
     );
 };
 
