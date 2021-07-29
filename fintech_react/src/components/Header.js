@@ -1,7 +1,7 @@
 const Header = ({title}) => {
     return (
         <>
-            <p>{title}</p>
+            <h1>{title}</h1>
         </>
     );
 };
