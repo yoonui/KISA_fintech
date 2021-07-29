@@ -4,6 +4,7 @@ import ListPage from "./pages/ListPage"
 import Header from "./components/Header"
 import AxiosTest from "./pages/axiosTest"
 import NewsPage from './pages/NewsPage';
+import ApiExample from "./pages/ApiExample"
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/news" exact>
           <NewsPage></NewsPage>
+        </Route>
+        <Route path="/api" exact>
+          <ApiExample></ApiExample>
         </Route>
       </Switch>
     </Router>
