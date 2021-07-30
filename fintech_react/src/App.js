@@ -6,6 +6,7 @@ import AxiosTest from "./pages/axiosTest"
 import NewsPage from './pages/NewsPage';
 import ApiExample from "./pages/ApiExample"
 import HospitalList from "./pages/HospitalList"
+import HospitalDetail from "./pages/HospitalDetail"
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         </Route>
         <Route path="/hospital" exact>
           <HospitalList></HospitalList>
+        </Route>
+        <Route path="/hospitalDetail" exact>
+          <HospitalDetail></HospitalDetail>
         </Route>
       </Switch>
     </Router>

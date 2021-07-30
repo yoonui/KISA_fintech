@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from "axios";
 import Header from '../components/Header'
-import HospitalListItem from "../components/hospital/HospitalCardItem"
+import HospitalListItem from "../components/HospitalCardItem"
 
 const HospitalList = () => {
     const [searchInput, setsearchInput] = useState();
@@ -14,7 +14,7 @@ const HospitalList = () => {
     };
 
     const getData = () => {
-        let apiurl = `/B551182/hospInfoService1/getHospBasisList1?ServiceKey=3ZttlOMdUJJDgQkTZntEnNVaemO5Rj3Q4zynJhrc4kMljGHY6jjdIdSXW5106xuLLacbEII6aX%2BWIX1l%2BpjEyg%3D%3D&pageNo=1&numOfRows=10&emdongNm=${searchInput}`;
+        let apiurl = `/B551182/hospInfoService1/getHospBasisList1?ServiceKey=3ZttlOMdUJJDgQkTZntEnNVaemO5Rj3Q4zynJhrc4kMljGHY6jjdIdSXW5106xuLLacbEII6aX%2BWIX1l%2BpjEyg%3D%3D&pageNo=1&numOfRows=10&clCd=31&emdongNm=${searchInput}`;
         axios.get(apiurl).then(function ({ data }) {
             console.log(data.response.body.items.item);
             setSearchResultList(data.response.body.items.item);
@@ -41,8 +41,8 @@ const HospitalList = () => {
             <input onChange={handleSearchInput}></input>
             <button onClick={getData}>조회하기</button>
             <HospitalList searchResultList={searchResultList}></HospitalList>
-            </div>
+        </div>
     )
 }
 
-export default HospitalList
+export default HospitalList;
