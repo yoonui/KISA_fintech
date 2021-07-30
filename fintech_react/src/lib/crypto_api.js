@@ -13,7 +13,8 @@ const makeAES = (planeText) => {
     const AESChipher = createCipheriv('aes-256-cbc', key, iv);
     let encrytedData = AESChipher.update(planeText, "utf-8", "base64");
     encrytedData += AESChipher.final("base64");
-    console.log(encrytedData);
+    
+    return encrytedData;
 }
 
 export default {

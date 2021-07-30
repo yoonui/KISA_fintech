@@ -39,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://apis.data.go.kr/"
+  "proxy": "https://datahub-dev.scraping.co.kr/"
 }

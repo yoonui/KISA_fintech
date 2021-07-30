@@ -8,6 +8,7 @@ import ApiExample from "./pages/ApiExample"
 import HospitalList from "./pages/HospitalList"
 import HospitalDetail from "./pages/HospitalDetail"
 import CipherTest from './pages/CipherTest';
+import CarInfo from './pages/CarInfo';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
       </Switch>
         <Route path="/enTest" exact>
           <CipherTest></CipherTest>
+        </Route>
+        <Route path="/carinfo" exact>
+          <CarInfo></CarInfo>
         </Route>
     </Router>
   );
