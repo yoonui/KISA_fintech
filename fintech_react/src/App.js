@@ -7,6 +7,7 @@ import NewsPage from './pages/NewsPage';
 import ApiExample from "./pages/ApiExample"
 import HospitalList from "./pages/HospitalList"
 import HospitalDetail from "./pages/HospitalDetail"
+import CipherTest from './pages/CipherTest';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
           <HospitalDetail></HospitalDetail>
         </Route>
       </Switch>
+        <Route path="/enTest" exact>
+          <CipherTest></CipherTest>
+        </Route>
     </Router>
   );
 }
