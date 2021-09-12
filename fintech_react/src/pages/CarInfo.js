@@ -9,12 +9,12 @@ const CarInfo = () => {
             method: "POST",
             url: "/assist/common/carzen/CarAllInfoInquiry",
             headers: {
-                "Authorization":"3ccda92dc0644ce9b472dd0ea57606fe37136cdb",
+                Authorization :"3ccda92dc0644ce9b472dd0ea57606fe37136cdb",
                 "Content-Type":"application/json;charset=UTF-8"
             },
             data : {
-                "REGINUMBER":"56서2179",
-                "OWNERNAME":"서동범"
+                REGINUMBER:"23버2349",
+                OWNERNAME: "곽영애",
             },
         };
         axios(option).then((response) => {

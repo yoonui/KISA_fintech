@@ -9,6 +9,7 @@ import HospitalList from "./pages/HospitalList"
 import HospitalDetail from "./pages/HospitalDetail"
 import CipherTest from './pages/CipherTest';
 import CarInfo from './pages/CarInfo';
+import InsurePage from './pages/InsurePage';
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
         </Route>
         <Route path="/carinfo" exact>
           <CarInfo></CarInfo>
+        </Route>
+        <Route path="/insure" exact>
+          <InsurePage></InsurePage>
         </Route>
     </Router>
   );
